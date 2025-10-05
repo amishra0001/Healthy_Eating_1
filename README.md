@@ -15,8 +15,8 @@ Protein-First Strategy is Paramount: Protein and Fiber are confirmed as the stro
 Cuisine-Specific Calorie Benchmarking: The analysis showed that calorie content differs significantly across cuisine types (e.g., Indian vs. Mexican). This mandates abandoning a single centralized calorie average and establishing cuisine-specific targets for competitive meal design.
 
 Methodology and Analysis Pipeline
-The project follows a rigorous three-stage process, fully encapsulated in the complete_healthy_eating_analysis.py script:
 
+The project follows a rigorous three-stage process, fully encapsulated in the complete_healthy_eating_analysis.py script:
 1. Data Cleansing and Preparation
 Missing Data Imputation: Handled missing values in all numerical columns by imputing the median value.
 
@@ -73,30 +73,20 @@ This file.
 How to Run the Analysis
 Requirements: This analysis requires Python 3.x and the following libraries:
 
-pandas
+a.pandas
+b.numpy
+c.matplotlib
+4.seaborn
+5.scipy
+6.statsmodels
 
-numpy
-
-matplotlib
-
-seaborn
-
-scipy
-
-statsmodels
-
-Execution: Ensure the Healthy_Eating.csv file is in the same directory as the Python script.
-
-Run the main analysis script from your terminal:
-
+Execution: Ensured the Healthy_Eating.csv file is in the same directory as the Python script.
+I run the main analysis script from my terminal:
 python complete_healthy_eating_analysis.py
-
 Output: The script will output the following to the console:
 
 Data cleansing logs and descriptive statistics.
-
 ANOVA and Regression results (R-squared, coefficients, P-values).
 
 The final strategic conclusion.
-
 Three pop-up windows displaying the generated data visualizations.
