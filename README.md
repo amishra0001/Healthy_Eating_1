@@ -6,14 +6,15 @@ This project provides a comprehensive statistical analysis of a healthy eating m
 
 The analysis moves beyond simple averages, using Multiple Linear Regression and ANOVA to translate raw nutritional data into actionable, high-impact business recommendations.
 
-🔑 Key Strategic Conclusions
+Key Strategic Conclusions
+
 The statistical modeling yielded two high-impact findings that guide future recipe development:
 
 Protein-First Strategy is Paramount: Protein and Fiber are confirmed as the strongest positive and statistically significant predictors of a higher customer rating. Focus on increasing these two macro-nutrients to directly maximize user satisfaction.
 
 Cuisine-Specific Calorie Benchmarking: The analysis showed that calorie content differs significantly across cuisine types (e.g., Indian vs. Mexican). This mandates abandoning a single centralized calorie average and establishing cuisine-specific targets for competitive meal design.
 
-🔬 Methodology and Analysis Pipeline
+Methodology and Analysis Pipeline
 The project follows a rigorous three-stage process, fully encapsulated in the complete_healthy_eating_analysis.py script:
 
 1. Data Cleansing and Preparation
@@ -37,7 +38,8 @@ Comparison of average nutritional content (Calories, Protein, Fat) by Diet Type.
 
 Box plot showing the distribution of Calories across major Cuisine Types (visual support for the ANOVA test).
 
-📁 Project Structure and Files
+Project Structure and Files
+
 File Name
 
 Type
@@ -68,7 +70,7 @@ Documentation
 
 This file.
 
-▶️ How to Run the Analysis
+How to Run the Analysis
 Requirements: This analysis requires Python 3.x and the following libraries:
 
 pandas
