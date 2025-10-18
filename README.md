@@ -1,92 +1,90 @@
-# Healthy_Eating_1
-Healthy Eating Meal Data Analysis
-Project Overview
-*******************************************************************************************************************************************************
-This project provides a comprehensive statistical analysis of a healthy eating meal dataset (Healthy_Eating.csv) to identify the key nutritional drivers of customer satisfaction (Rating) and establish data-driven strategies for menu optimization.
+# 🥗 **Healthy Eating Meal Data Analysis**
 
-The analysis moves beyond simple averages, using Multiple Linear Regression and ANOVA to translate raw nutritional data into actionable, high-impact business recommendations.
+---
 
-Key Strategic Conclusions
+## 📘 **Project Overview**
+This project provides a **comprehensive statistical analysis** of a healthy eating meal dataset (**Healthy_Eating.csv**) to identify the **key nutritional drivers of customer satisfaction (Rating)** and establish **data-driven strategies** for menu optimization.
 
-The statistical modeling yielded two high-impact findings that guide future recipe development:
+The analysis goes beyond basic descriptive statistics, applying **Multiple Linear Regression** and **ANOVA** to convert raw nutritional data into **actionable business insights**.
 
-Protein-First Strategy is Paramount: Protein and Fiber are confirmed as the strongest positive and statistically significant predictors of a higher customer rating. Focus on increasing these two macro-nutrients to directly maximize user satisfaction.
+---
 
-Cuisine-Specific Calorie Benchmarking: The analysis showed that calorie content differs significantly across cuisine types (e.g., Indian vs. Mexican). This mandates abandoning a single centralized calorie average and establishing cuisine-specific targets for competitive meal design.
+## 🎯 **Key Strategic Conclusions**
 
-Methodology and Analysis Pipeline
+### 🧬 **1. Protein-First Strategy is Paramount**
+- **Protein** and **Fiber** are the strongest positive and statistically significant predictors of higher customer satisfaction.
+- Focus on **increasing these two macro-nutrients** in recipe development to directly enhance ratings.
 
-The project follows a rigorous three-stage process, fully encapsulated in the complete_healthy_eating_analysis.py script:
-1. Data Cleansing and Preparation
-Missing Data Imputation: Handled missing values in all numerical columns by imputing the median value.
+### 🍱 **2. Cuisine-Specific Calorie Benchmarking**
+- The analysis found that **calorie content varies significantly by cuisine** (e.g., *Indian vs. Mexican*).
+- This supports **abandoning a single calorie target** across cuisines and adopting **cuisine-specific calorie standards** for competitive meal design.
 
-Outlier Removal: Outliers in key variables (calories, protein_g, fat_g) were removed using the Interquartile Range (IQR) method to ensure robust statistical modeling.
+---
 
-Data Standardization: Categorical data (cuisine, diet_type) was cleaned and standardized.
+## ⚙️ **Methodology and Analysis Pipeline**
 
-2. Statistical Analysis
-Multiple Linear Regression: Used to quantify the impact (coefficient) and significance (P-value) of different nutrients (protein_g, fat_g, sugar_g, fiber_g) on the final Rating.
+The project follows a **rigorous three-stage process**, fully encapsulated in the script  
+`complete_healthy_eating_analysis.py`.
 
-ANOVA (Analysis of Variance): Used to test the hypothesis that the mean calorie content is different across the major cuisine types.
+### **1️⃣ Data Cleansing and Preparation**
+- **Missing Data Imputation:** Replaced missing numerical values with the **median** of each column.  
+- **Outlier Removal:** Used the **Interquartile Range (IQR)** method to remove outliers in *calories*, *protein_g*, and *fat_g*.  
+- **Data Standardization:** Cleaned and standardized categorical columns (*cuisine*, *diet_type*).
 
-3. Data Visualization
-Three primary visualizations were generated to summarize the findings:
+### **2️⃣ Statistical Analysis**
+- **Multiple Linear Regression:** Quantified the effect (coefficient) and significance (P-value) of nutritional variables — *protein_g*, *fat_g*, *sugar_g*, and *fiber_g* — on **Rating**.  
+- **ANOVA (Analysis of Variance):** Tested the hypothesis that **mean calorie content differs across cuisine types**.
 
-Distribution of overall Meal Ratings.
+### **3️⃣ Data Visualization**
+Three main plots summarize the key findings:
+- 📊 **Distribution of Meal Ratings**  
+- 🥑 **Average Nutritional Content (Calories, Protein, Fat) by Diet Type**  
+- 🍜 **Box Plot of Calorie Distribution Across Cuisines** (supports ANOVA results)
 
-Comparison of average nutritional content (Calories, Protein, Fat) by Diet Type.
+---
 
-Box plot showing the distribution of Calories across major Cuisine Types (visual support for the ANOVA test).
+## 📂 **Project Structure and Files**
 
-Project Structure and Files
+| **File Name** | **Type** | **Description** |
+|----------------|-----------|-----------------|
+| `Healthy_Eating.csv` | Data | Raw dataset containing meal info, nutritional values, and ratings. |
+| `complete_healthy_eating_analysis.py` | Python Script | Core script for loading, cleaning, analyzing, and visualizing data. |
+| `project_summary.md` | Report | Summary of objectives, methodology, and strategic insights. |
+| `README.md` | Documentation | Main project documentation file. |
 
-File Name
+---
 
-Type
+## 🧠 **How to Run the Analysis**
 
-Description
+### **Requirements**
+This analysis requires **Python 3.x** and the following libraries:
 
-Healthy_Eating.csv
+```bash
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+statsmodels
+Execution Steps
+Ensure Healthy_Eating.csv is located in the same directory as the Python script.
 
-Data
+Run the main analysis script from your terminal:
 
-The raw dataset containing meal information, nutritional values, and customer ratings.
-
-complete_healthy_eating_analysis.py
-
-Python Script
-
-The core script for the entire project. It handles data loading, cleansing, execution of all statistical models, plotting of all visualizations, and prints the final strategic conclusion.
-
-project_summary.md
-
-Report
-
-A detailed summary document outlining the project's objectives, methodology, and key strategic findings.
-
-README.md
-
-Documentation
-
-This file.
-
-How to Run the Analysis
-Requirements: This analysis requires Python 3.x and the following libraries:
-
-a.pandas
-b.numpy
-c.matplotlib
-4.seaborn
-5.scipy
-6.statsmodels
-
-Execution: Ensured the Healthy_Eating.csv file is in the same directory as the Python script.
-I run the main analysis script from my terminal:
+bash
+Copy code
 python complete_healthy_eating_analysis.py
-Output: The script will output the following to the console:
+Output
+The script will generate:
 
-Data cleansing logs and descriptive statistics.
-ANOVA and Regression results (R-squared, coefficients, P-values).
+🧾 Data cleansing logs and descriptive statistics
 
-The final strategic conclusion.
-Three pop-up windows displaying the generated data visualizations.
+📈 ANOVA and Regression results (R-squared, coefficients, P-values)
+
+🧩 Final strategic conclusion summary
+
+📊 Three visualization windows displaying the analytical results
+
+🏁 Conclusion
+This project demonstrates how statistical modeling can drive nutritional optimization and menu innovation in the healthy eating industry.
+By focusing on Protein and Fiber while using cuisine-specific calorie benchmarks, organizations can align menu design with customer satisfaction and competitive positioning.
